@@ -2,17 +2,19 @@
 
 import styles from './city.module.css';
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function City(props) {
   const [isVisible, setIsVisible] = useState(true);
 
   return (
     <div>
-      <h2
+      <Link
+        href={`/cities/${props.slug}`}
         className={`${styles.city} ${isVisible ? styles.visible : styles.hidden}`}
       >
         {props.name}
-      </h2>
+      </Link>
       <p>{props.country}</p>
       <button
         onClick={() => {
