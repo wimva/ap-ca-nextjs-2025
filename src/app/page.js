@@ -1,5 +1,6 @@
 import styles from './page.module.css';
 import City from '@/components/city/city.js';
+import Counter from '@/components/counter/counter.js';
 
 export default function Home() {
   const cities = [
@@ -18,6 +19,10 @@ export default function Home() {
     <div className={styles.page}>
       <h1>City List</h1>
       <div>{cityList}</div>
+
+      <br />
+
+      <Counter />
     </div>
   );
 }

@@ -1,3 +1,11 @@
 .city {
   color: blue;
 }
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
